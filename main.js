@@ -10,14 +10,17 @@ console.log(x);
 
 
 const y = args[3];
+console.log(y)
+
+const total = parseInt(x) + parseInt(y);
+console.log(total);
 
 
-
-const z = x / (y + x);
-
-//console.log(z + "%");
+const z = x / total;
 console.log(z)
 
+const parc = z * 100;
+console.log(parc)
 
-const parcentage = z.toFixed(3);
-console.log(parcentage * 100 + "%");
+const fix = parc.toFixed(2);
+console.log(fix + "%");
